@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" href="img/dist/favicon/favicon.ico" rel="shortcut icon">
+    <title>Market</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__top">
+                <div class="header__group">
+                    <div class="language header__elem">
+                        <button class="language__btn">
+                            <span class="language__flag" style="background-image: url(img/dist/flag-ru.png);"></span>
+                            <span>Русский</span>
+                        </button>
+                        <div class="language__dropdown">
+                            <div class="language__wrapper">
+                                <ul class="language__list">
+                                    <li class="language__item">
+                                        <a href="#" class="language__elem">
+                                            <span class="language__flag" style="background-image: url(img/dist/flag-en.png);"></span>
+                                            <span>English</span>
+                                        </a>
+                                    </li>
+                                    <li class="language__item">
+                                        <a href="#" class="language__elem">
+                                            <span class="language__flag" style="background-image: url(img/dist/flag-ua.png);"></span>
+                                            <span>Ukraine</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="currency header__elem">
+                        <button class="currency__btn">
+                            <svg class="currency__icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-sign-rub"></use>
+                            </svg>
+                            <span>RUB</span>
+                        </button>
+                        <div class="currency__dropdown">
+                            <div class="currency__wrapper">
+                                <ul class="currency__list">
+                                    <li class="currency__item">
+                                        <a href="#" class="currency__elem">
+                                            <svg class="currency__icon">
+                                                <use xlink:href="img/dist/sprite.svg#icon-sign-usd"></use>
+                                            </svg>
+                                            <span>USD</span>
+                                        </a>
+                                    </li>
+                                    <li class="currency__item">
+                                        <a href="#" class="currency__elem">
+                                            <svg class="currency__icon">
+                                                <use xlink:href="img/dist/sprite.svg#icon-sign-eur"></use>
+                                            </svg>
+                                            <span>EUR</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="social header__elem">
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <svg class="social__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <svg class="social__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <svg class="social__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__group">
+                    <div class="c-theme">
+                        <span class="c-theme__title"></span>
+                        <div class="c-theme__switch"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="header__group"></div>
+                <div class="header__group">
+                    <form action="#" class="c-search header__search">
+                        <div class="c-search__control">
+                            <input type="text" class="c-search__input" placeholder="Поиск">
+                            <ul class="c-search__dropdown">
+                                <li class="c-search__item">
+                                    <a href="#" class="c-search__elem">AWP | Lightning Strike</a>
+                                </li>
+                                <li class="c-search__item">
+                                    <a href="#" class="c-search__elem">Maverick M4A1 Carbine Expert</a>
+                                </li>
+                                <li class="c-search__item">
+                                    <a href="#" class="c-search__elem">Broken Fang Gloves | Jade</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+                <div class="header__group">
+                    <div class="c-user-info">
+                        <div class="c-user-info__balance">
+                            <h4 class="c-user-info__subtitle">Ваш баланс</h4>
+                            <div class="c-user-info__inner">
+                                <svg class="c-user-info__currency">
+                                    <use xlink:href="img/dist/sprite.svg#icon-sign-rub"></use>
+                                </svg>
+                                <span class="c-user-info__value">3 500</span>
+                            </div>
+                        </div>
+                        <button class="c-user-info__add" aria-label="Пополнить баланс"></button>
+                        <button class="c-user-info__notification" aria-label="Уведомления">
+                            <svg class="c-user-info__notification--icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-notification"></use>
+                            </svg>
+                            <span class="c-user-info__notification--status"></span>
+                        </button>
+                        <div class="c-user-info__ava" style="background-image: url(img/dist/promo-03.jpg);"></div>
+                        <a href="#" class="c-user-info__sell">Продать</a>
+                        <a href="#" class="c-user-info__basket" aria-label="Корзина">
+                            <svg class="c-user-info__basket--icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-basket"></use>
+                            </svg>
+                            <span class="c-user-info__basket--value">4</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end of header -->
+    <!-- promo -->
+    <div class="promo" id="promo">
+        <div class="container">
+            <div class="promo__wrapper">
+                <div class="promo__item" style="background-image: url(img/dist/promo-01.jpg)"></div>
+                <div class="promo__item" style="background-image: url(img/dist/promo-02.jpg)"></div>
+                <div class="promo__item" style="background-image: url(img/dist/promo-03.jpg)"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end of promo -->
+    <!-- categories -->
+    <div class="categories" id="categories">
+        <div class="container">
+            <div class="categories__wrapper">
+                <a href="#" class="categories__item">
+                    <img src="img/dist/categories-img-01.png" alt="Ножи" class="categories__img">
+                    <span class="categories__name">Ножи</span>
+                </a>
+                <a href="#" class="categories__item">
+                    <img src="img/dist/categories-img-02.png" alt="Перчатки" class="categories__img">
+                    <span class="categories__name">Перчатки</span>
+                </a>
+                <a href="#" class="categories__item">
+                    <img src="img/dist/categories-img-03.png" alt="Винтовки" class="categories__img">
+                    <span class="categories__name">Винтовки</span>
+                </a>
+                <a href="#" class="categories__item">
+                    <img src="img/dist/categories-img-04.png" alt="Тяжелое оружие" class="categories__img">
+                    <span class="categories__name">Тяжелое оружие</span>
+                </a>
+                <a href="#" class="categories__item">
+                    <img src="img/dist/categories-img-01.png" alt="Пистолеты-Пулеметы" class="categories__img">
+                    <span class="categories__name">Пистолеты-Пулеметы</span>
+                </a>
+                <a href="#" class="categories__item">
+                    <img src="img/dist/categories-img-02.png" alt="Пистолеты" class="categories__img">
+                    <span class="categories__name">Пистолеты</span>
+                </a>
+                <a href="#" class="categories__item">
+                    <img src="img/dist/categories-img-03.png" alt="Агенты" class="categories__img">
+                    <span class="categories__name">Агенты</span>
+                </a>
+                <a href="#" class="categories__item">
+                    <img src="img/dist/categories-img-04.png" alt="Акссесуары" class="categories__img">
+                    <span class="categories__name">Акссесуары</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- end of categories -->
+    <!-- scripts -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

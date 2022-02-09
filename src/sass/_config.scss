@@ -1,0 +1,78 @@
+// variables
+$primary-font-family: 'Montserrat', sans-serif; // body font-family
+$primary-font-size: 16px; // body font-size
+$primary-line-height: 1.25; // body line-height
+$primary-color: #000000;
+$white-color: #FFFFFF;
+
+// common document styles - tags
+html {
+    overflow-y: scroll;
+}
+
+body {
+	position: relative;
+	overflow-x: hidden;
+    font-family: $primary-font-family;
+    font-size: $primary-font-size;
+    line-height: $primary-line-height;
+    background: #1D2025;
+}
+
+ul,
+ol,
+li {
+	display: block;
+	padding: 0;
+	margin: 0;
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+    font-weight: normal;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    display: inline-block;
+    color: $white-color;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        text-decoration: none;
+        color: $white-color;
+    }
+    &:active {
+        color: $white-color;
+    }
+}
+
+picture {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+}
+
+svg {
+    transition: all 0.3s ease-in-out;
+}
+
+// common document styles - class
+.scroll-disabled {
+    overflow: hidden;
+}
+
+.container {
+    padding: 0 40px;
+	margin: 0 auto;
+    width: 100%;
+
+    @media screen and (max-width: 1023px) {
+        padding: 0;
+    }
+}

@@ -1,0 +1,98 @@
+@import "config"; // always at the beginning
+@import "header";
+@import "components";
+
+// social
+.social {
+    display: flex;
+    align-items: center;
+    &__item + &__item {
+        margin-left: 18px;
+    }
+    &__icon {
+        width: 17px;
+        height: 17px;
+    }
+}
+
+// promo
+.promo {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 1023px) {
+            flex-wrap: wrap;
+        }
+    }
+    &__item {
+        flex: 1 1 100%;
+        min-height: 250px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    //&__item + &__item {
+    //    margin-left: 10px;
+
+    //    @media screen and (max-width: 1023px) {
+    //        margin-top: 10px;
+    //        margin-left: 0;
+    //    }
+    //}
+}
+
+// categories
+.categories {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 1599px) {
+            flex-wrap: wrap;
+        }
+    }
+    &__item + &__item {
+        border-left: 2px solid #282B30;
+    }
+    &__item {
+        display: block;
+        padding: 0 10px 10px;
+        flex: 1 1 100%;
+        text-align: center;
+        &:hover {
+            background: #363A43;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1599px) {
+            flex: 0 0 25%;
+            &:nth-child(4n + 1) {
+                border-left: none;
+            }
+            &:nth-child(n + 5) {
+                border-top: 2px solid #282B30;
+            }
+        }
+        @media screen and (max-width: 767px) {
+            flex: 0 0 50%;
+            &:nth-child(2n + 1) {
+                border-left: none;
+            }
+            &:nth-child(n + 3) {
+                border-top: 2px solid #282B30;
+            }
+        }
+    }
+    &__img {
+        display: block;
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+    }
+    &__name {
+        display: block;
+        font-size: 12px;
+        font-weight: bold;
+        color: $white-color;
+    }
+}
